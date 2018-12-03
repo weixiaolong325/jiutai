@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="利息,金钱">
+    <meta name="description" content="利息,金钱">
+    <meta name="author" content="hw">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>玖泰金融</title>
+    <link rel="stylesheet" href="css/cssreset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body id="index_controller" ng-controller="index_controller">
+    <!-- 头部 -->
+    <div class="header">
+        <div class="w">
+            <div class="logo fl">
+                <h1>
+                  <a href="#">玖泰金融</a>
+                </h1>
+            </div>
+            <div class="header_nav fl">
+                <ul>
+                    <li ng-repeat="item in nav" ng-class="navcur==$index?'current':''" ng-click="selectNav($index)"><a href="#">{{item.nav}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <!-- 首页 -->
+    <div class="content" ng-if="navcur==0">
+        <!-- 广告 -->
+        <div class="banner1">
+            <div class="banner_img">
+                <a href="#">
+                    <img src="./images/banner1.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="companyProfile">
+            <div class="company_box">
+                <img class="fl" src="./images/con1_company.jpg">
+                <div class="company_con fl">
+                    <img class="company_tit" src="./images/con1_comptit.png">
+                    <div class="company_txt">
+                        <p>广州市玖泰投资咨询有限公司简称：“玖泰金融”，成立于2014年11月15日，总部坐落于广州市天河区珠江新城华夏路30号富力盈通大厦19楼。</p>
+                        <p>玖泰金融目前是广州实力较强，发展较快的金融服务平台其名下分子公司：广州中融投资咨询有限公司、浙商普惠信息咨询有限公司、广州市铸创投资咨询有限公司），目前公司与五大国有银行（工商银行、农业银行、中国银行、建设银行、交通银行），十二大商业银行（招商银行、上海浦东发展银行、中信银行、华夏银行、中国光大银行、兴业银行、广发银行、中国民生银行、平安银行（原深圳发展银行）、恒丰银行、浙商银行、渤海银行)，四十家消费金融公司、P2P金融提供优质的客户群体达成合作，通过系统和快捷的贷款咨询为客户提供专业的贷款方案设计，还款方式的对比分析，贷款申请以及贷款相关手续的办理。玖泰金融通过专业严谨的一对一顾问式服务，为企业和个人客户月均解决资金需求总计3000万，平均每年帮助5000人以上解决资金难题。</p>
+                        <p>自成立以来，坚持持续以诚待人、专业高素质的服务水平、赢得了市场上合作银行的好口碑！战略决定高度，共创决定未来！一个以“军队+家庭+学校”文化核心理念的“中国综合金融服务商”正在砥砺奋进！我们一直坚持着“以诚待人、 齐心协力、 追求卓越 、超越梦想”的价值观，一步一个脚印，力争把玖泰金融打造成为具有一定品牌知名度、市内前列的融资公司。</p>
+                    </div>
+                    <img class="company_btn" src="./images/con1_compbtn.png" ng-click="more()">
+                </div>
+            </div>
+            <img class="company_fot" src="./images/con1_compfot.png">
+        </div>
+        <div class="productBrief">
+            <img class="product_tit" src="./images/con1_prodtit.png">
+            <div class="product_con">
+                <img src="./images/con1_prodcon01.jpg">
+                <img src="./images/con1_prodcon02.jpg">
+                <img src="./images/con1_prodcon03.jpg" style="margin-right: 0px;">
+                <img src="./images/con1_prodcon04.jpg">
+                <img src="./images/con1_prodcon05.jpg">
+                <img src="./images/con1_prodcon06.jpg" style="margin-right: 0px;">
+            </div>
+        </div>
+        <div class="partner">
+            <img class="partner_tit" src="./images/con1_parttit.png">
+            <div class="partner_con">
+                <div class="conLogo">
+                    <div class="logos" ng-repeat="item in logos">
+                        <!-- <img src="./images/logos01.jpg" ng-url="item.url"> -->
+                        <img ng-src="{{item.url}}">
+                    </div>
+                </div>
+                <div class="prev"></div>
+                <div class="next"></div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="newsCenter">
+                <div class="news_tit"></div>
+                <div class="news_con">
+                    <div class="news_conl fl">
+                        <div class="conl_time">
+                        <div class="conl_timeb fl">公司新闻</div>
+                            <div class="conl_timet fl">2018-10-31</div>
+                        </div>
+                        <div class="conl_tit">
+                            这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题
+                        </div>
+                        <div class="conl_con">
+                             这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容
+                        </div>
+                        <div class="conl_img">
+                            <img src="./images/news_img.jpg">
+                        </div>
+                    </div>
+                    <div class="news_conr fl">
+                        <div class="conr_item">
+                            <div class="conr_tit">
+                                <div class="conr_titb fl">公司新闻</div>
+                                <div class="conr_titt fl">这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题...</div>
+                            </div>
+                            <div class="conr_con">
+                                <div class="conr_cont fl">
+                                    <div class="conr_contm">09-09</div>
+                                    <div class="conr_conty">2018</div>
+                                </div>
+                                <div class="conr_conc fl">
+                                    这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容。
+                                </div>
+                            </div>
+                            <img class="conr_img" src="./images/news_img2.jpg" width="573">
+                        </div>
+                        <div class="conr_item">
+                            <div class="conr_tit">
+                                <div class="conr_titb fl">公司新闻</div>
+                                <div class="conr_titt fl">这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题...</div>
+                            </div>
+                            <div class="conr_con">
+                                <div class="conr_cont fl">
+                                    <div class="conr_contm">09-09</div>
+                                    <div class="conr_conty">2018</div>
+                                </div>
+                                <div class="conr_conc fl">
+                                    这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容。
+                                </div>
+                            </div>
+                            <img class="conr_img" src="./images/news_img2.jpg" width="573">
+                        </div>
+                        <div class="conr_item">
+                            <div class="conr_tit">
+                                <div class="conr_titb fl">公司新闻</div>
+                                <div class="conr_titt fl">这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题...</div>
+                            </div>
+                            <div class="conr_con">
+                                <div class="conr_cont fl">
+                                    <div class="conr_contm">09-09</div>
+                                    <div class="conr_conty">2018</div>
+                                </div>
+                                <div class="conr_conc fl">
+                                    这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容。
+                                </div>
+                            </div>
+                            <img class="conr_img" src="./images/news_img2.jpg" width="573">
+                        </div>
+                    </div>
+                </div>
+                <div class="news_btn">
+                    <img src="./images/news_btn.png" width="120">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 产品简介 -->
+    <div class="content" ng-if="navcur==1">
+        <!-- 广告 -->
+        <div class="banner2">
+            <div class="banner_img">
+                <a href="#">
+                    <img src="./images/banner2.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="w">
+            <div class="content_tit">
+                <img src="./images/con2_tit.png">
+            </div>
+            <div class="content_con">
+                <div class="conitem" ng-repeat="item in content2" ng-class="$index%2==1?'conitemTwo':'conitemOne'">
+                    <img ng-src="./images/con2_img{{$index}}.png">
+                    <div class="conitem_con">
+                        <img ng-src="./images/con2_ico{{$index}}.png">
+                        <div class="con01_txt" ng-bind="item.txt"></div>
+                        <img class="con_btn fl" src="./images/con2_btn.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 人才招聘 -->
+    <div class="content" ng-if="navcur==2">
+        <!-- 广告 -->
+        <div class="banner2">
+            <div class="banner_img">
+                <a href="#">
+                    <img src="./images/banner3.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="content3">
+            <div class="con3">
+                <img class="con3_img" src="./images/con3_img.jpg" width="1200">
+            </div>
+            <div class="post">
+                <div class="postli" ng-repeat="item in post" ng-class="postcur==$index?'cur':''" ng-click="selectPost($index)">
+                    <div ng-bind="item.txt"></div>
+                </div>
+            </div>
+            <div class="post_con" ng-if="postcur==0">
+                <div class="post_cont">任职资格</div>
+                <div class="post_conc">
+                    <p>1、年龄18-28周岁，高中以上学历（有无经验均可）</p>
+                    <p>2、口齿清晰，普通话流利，语音富有感染力，男女不限</p>
+                    <p>3、性格开朗，思维敏捷，热爱销售工作，乐观向上承受一定工作压力</p>
+                    <p>4、有强烈的事业心、责任心和积极的工作态度</p>
+                </div>
+                <div class="post_conf">
+                    <p>
+                        <b>薪资福利:</b>
+                        <span>（试用期底薪3500＋2000绩效＋高提成＋奖金＋包住）试用期2个月后即可转正，表现优可申请提前转正！</span>
+                    </p>
+                    <p>
+                        <b>晋升空间：</b>
+                        <span>公平公正公开，完善的晋升机制及晋升空间，毎三个月一次内部晋升考评晋升机会：实习生→客户经理→副主任→主任</span>
+                    </p>
+                </div>
+            </div>
+            <div class="post_con" ng-if="postcur==1">
+                <div class="post_cont">任职资格</div>
+                <div class="post_conc">
+                    <p>1、20-28岁大学学历以上有经验者优先（能力突出者可放宽）</p>
+                    <p>2、对销售工作有较高的热情，口齿伶俐，语言富有感染力。</p>
+                    <p>3、有强烈的创业意识，愿与公司一同成长</p>
+                    <p>4、性格坚韧，具备良好的应变能力，与判断能力。</p>
+                </div>
+                <div class="post_conf">
+                    <p>
+                        <b>薪资福利:</b>
+                        <span>（试用期底薪3000+高提成+上不封顶的奖金）试用期2个月后即可转正，表现异可申请提前转正！</span>
+                    </p>
+                    <p>
+                        <b>晋升空间：</b>
+                        <span>公平公正公开，完善的晋升机制及晋升空间，毎三个月一次内部晋升考评晋升机会：跟单文员→按揭业务经理→门店主管→公司合伙人</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 新闻中心 -->
+    <div class="content" ng-if="navcur==3">
+        <!-- 广告 -->
+        <div class="banner2">
+            <div class="banner_img">
+                <a href="#">
+                    <img src="./images/banner4.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="con4">
+            <div class="content4">
+                <div class="con4_nav">
+                    <img class="fl" src="./images/con4_nav.jpg" width="20" style="margin-right: 4px;">
+                    <div class="con4_navli fl">
+                        <span>新闻中心</span>
+                        <img src="./images/con4_navli.jpg" width="16">
+                    </div>
+                    <div class="con4_navli fl">
+                        <span>行业资讯</span>
+                        <img src="./images/con4_navli.jpg" width="16">
+                    </div>
+                    <div class="con4_navli fl" style="line-height: 59px">
+                        <span>选中的新闻标题</span>
+                    </div>
+                </div>
+                <div class="con4_all">
+                    <div class="con4_tab fl">
+                        <div class="tabli cur">行业资讯</div>
+                        <div class="tabli">公司咨询</div>
+                    </div>
+                    <div class="con4_con fl">
+                        <!-- <div class="con4_newstit">
+                            <img class="newstit_img fl" src="./images/newstit_img.jpg">
+                            <div class="newstit_con fl">
+                                <div class="newstit_contime">2018-10-31</div>
+                                <div class="newstit_contit">这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题</div>
+                                <div class="newstit_contcon">这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容</div>
+                            </div>
+                        </div>
+                        <div class="con4_newsul">
+                            <div class="con4_newsli">
+                                <div class="con4_newslil fl">
+                                    <div class="con4_newslily">30</div>
+                                    <div class="con4_newslilm">2018-09</div>
+                                </div>
+                                <div class="con4_newslir fl">
+                                    <div class="con4_newslirt">这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题...</div>
+                                    <div class="con4_newslirc">这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容。</div>
+                                    <img src="./images/con4_newsliri.jpg">
+                                </div>
+                            </div>
+                            <div class="con4_newsli">
+                                <div class="con4_newslil fl">
+                                    <div class="con4_newslily">30</div>
+                                    <div class="con4_newslilm">2018-09</div>
+                                </div>
+                                <div class="con4_newslir fl">
+                                    <div class="con4_newslirt">这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题...</div>
+                                    <div class="con4_newslirc">这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容。</div>
+                                    <img src="./images/con4_newsliri.jpg">
+                                </div>
+                            </div>
+                            <div class="con4_newsli">
+                                <div class="con4_newslil fl">
+                                    <div class="con4_newslily">30</div>
+                                    <div class="con4_newslilm">2018-09</div>
+                                </div>
+                                <div class="con4_newslir fl">
+                                    <div class="con4_newslirt">这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题...</div>
+                                    <div class="con4_newslirc">这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容。</div>
+                                    <img src="./images/con4_newsliri.jpg">
+                                </div>
+                            </div>
+                            <div class="con4_newsli">
+                                <div class="con4_newslil fl">
+                                    <div class="con4_newslily">30</div>
+                                    <div class="con4_newslilm">2018-09</div>
+                                </div>
+                                <div class="con4_newslir fl">
+                                    <div class="con4_newslirt">这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题...</div>
+                                    <div class="con4_newslirc">这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容。</div>
+                                    <img src="./images/con4_newsliri.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="con4_newsto">
+                            
+                        </div> -->
+                        <div class="newsdel">
+                            <div class="newsdel1">这个是新闻标题这个是新闻标题这个是新闻标题这个是新闻标题这个是</div>
+                            <div class="newsdel2">
+                                <p class="fl">来源：中国平安银行官网&nbsp;&nbsp;&nbsp;&nbsp;李大钊注</p>
+                                <p class="fr">发布时间：2018-10-31</p>
+                            </div>
+                            <img class="newsdel3" src="./images/newsdel3.jpg">
+                            <div class="newsdel4">
+                                <p>这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容。</p>
+                                <p>这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容。</p>
+                                <p>这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容。</p>
+                                <p>这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容这个是新闻内容。</p>
+                            </div>
+                            <div class="newsdel5 fr">
+                                <p>（国际金融报记者  李大钊）</p>
+                                <p style="margin-top: 16px;">（责任编辑  李大钊PZ9527）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 关于我们 -->
+    <div class="content" ng-if="navcur==4">
+        <!-- 广告 -->
+        <div class="banner2">
+            <div class="banner_img">
+                <a href="#">
+                    <img src="./images/banner5.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="con5">
+            <div class="content5">
+                <div class="con5_tab fl">
+                    <!-- <div class="tabli">公司简介</div>
+                    <div class="tabli">企业文化</div>
+                    <div class="tabli">团队风采</div>
+                    <div class="tabli">联系我们</div> -->
+                    <div class="tabli" ng-repeat="item in tabli" ng-class="tablicur==$index?'cur':''" ng-click="selectTabli($index)">
+                        <div ng-bind="item.txt"></div>
+                    </div>
+                </div>
+                <div class="con5_con fl">
+                    <div class="con5_con2" ng-if="tablicur==1">
+                        <img src="./images/con5_con2.jpg">
+                    </div>
+                    <div class="con5_con3" ng-if="tablicur==2">
+                        <img src="./images/con5_con3.jpg">
+                    </div>
+                    <div class="con5_con4" ng-if="tablicur==3">
+                        <img src="./images/con5_con4.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 会员中心 -->
+    <div class="content" ng-if="navcur==5">
+        <!-- 广告 -->
+        <div class="banner2">
+            <div class="banner_img">
+                <a href="#">
+                    <img src="./images/banner6.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="con6">
+            <img src="./images/con6_img.jpg">
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="footer01">
+            <div class="links">
+                <img src="./images/links.png">
+                <div>
+                    <p>友情链接 / LINKS</p>
+                    <div class="links_txt" ng-repeat="item in links" ng-click="selectLinks($index)">
+                        <span ng-bind="item.txt"></span>
+                    </div>
+                </div>
+            </div>
+            <img src="./images/footer01.png">
+        </div>
+        <div class="footer02"><img src="./images/footer02.png"></div>
+    </div>
+    <script src="./js/lib/angular.min.js"></script>
+    <script src="./js/configData.js"></script>
+    <script src="./js/index_controller.js"></script>
+</body>
+</html>
