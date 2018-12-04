@@ -1,10 +1,96 @@
 ﻿
+body {
+    margin: 0px;
+    padding: 0;
+}
 /*----------------index--------*/
-.content-range{
-    max-width:900px;
-    margin:auto;
+.content-range {
+    max-width: 900px;
+    margin: auto;
 }
-body .navbar-default{
-    background-color:#191619;
+
+body .navbar-default {
+    background-color: #191619;
 }
+
+.navbar-default .navbar-nav > li > a {
+    color: #CEAF62;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #CEAF62;
+    background-color: #191619;
+    font-weight: 700;
+}
+
+.navbar-nav > li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.jt_logo {
+    border: 1px solid #ffffff;
+    width: 100px;
+    height: 52px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.index_banner img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.i_bock2 {
+    background-color: #F5F8FA;
+    padding: 10px;
+    position: relative;
+}
+
+.i_bock2_top {
+    border: 1px solid #ff0000;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+    background: #ffffff;
+    padding: 10px;
+}
+
+.navbar {
+    border: none;
+}
+
+.i_bock2_title {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.i_bock2_title_min {
+    color: #A7A7A8;
+}
+
+
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav > .active {
+        border-bottom: 3px solid #CEAF62;
+    }
+
+    .navbar-nav {
+        float: right;
+    }
+
+    .navbar {
+        border-radius: 0px;
+    }
+}
+
 /*----------------index--------*/
