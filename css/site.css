@@ -63,6 +63,7 @@ body .navbar-default {
     margin-top: -20px;
     background: #ffffff;
     padding: 10px;
+    position:relative;
 }
 
 .navbar {
@@ -77,6 +78,12 @@ body .navbar-default {
 .i_bock2_title_min {
     color: #A7A7A8;
 }
+.i_bock2_top img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 @media (min-width: 768px) {
@@ -90,6 +97,14 @@ body .navbar-default {
 
     .navbar {
         border-radius: 0px;
+    }
+    .i_bock2_left{
+        text-align:right;
+    }
+}
+@media (max-width: 768px){
+    .i_bock2_left{
+        text-align:center;
     }
 }
 
