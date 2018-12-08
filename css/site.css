@@ -12,6 +12,36 @@ body {
 .float_clear{
     clear:both;
 }
+/*--------------bottom----------------*/
+.j_bottom{
+    background-color:#191619;
+}
+.j_bottom_content{
+    padding-left:10px;
+    padding-right:10px;
+}
+.bottom_linkimg img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.bottom_links{
+    padding-top:15px;
+}
+.b_link_txt{
+    color:#D2B364;
+}
+.b_link_txt2 {
+    color: #767676;
+    font-size:12px;
+}
+    .b_link_txt2 ul {
+        list-style: none;
+    }
+    .b_link_txt2 ul li{
+        display:inline;
+    }
+/*-----------bottom------------------*/
 /*----------------index--------*/
 .f_left {
     float: left;
@@ -128,6 +158,7 @@ body .navbar-default {
 .i_bock2_text {
     text-indent: 25px;
     line-height: 25px;
+    text-align:left;
 }
 
 .i_bock2_btn {
@@ -250,39 +281,126 @@ body .navbar-default {
     margin-top:25px;
     padding:10px;
 }
-.i_bock4_l{
-    float:left;
-    width:10%;
-    text-align:center;
-}
-.i_bock4_m {
-    float: left;
-    width: 80%;
-    overflow: hidden;
-}
-.i_bock4_r {
-    float: right;
-    width: 10%;
-    text-align: center;
-}
-.i_bock4_img img{
-   width:9%;
-   height:auto;
-   margin-right:13px;
 
-}
-.i_bock4_img{
-    width:200%;
-}
 
 .i_bock4_img div {
     padding-bottom: 10px;
 }
+.i_bock4_plist{
+    margin-top:25px;
+}
+.i_bock_list{
+    margin-bottom:10px;
+}
+.i_bock4_plist img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.i_bock4_item{
+    padding-left:5px;
+    padding-right:5px;
+}
+.i_bock4_btn{
+    display:inline-block;
+    width:100%;
+    height:auto;
+}
+.i_bock5{
+    padding-top:25px;
+    background-image:url(../image/news.jpg)
+}
+.i_bock5_content{
+    padding:20px 10px;
+}
+.i_bock5_title {
+    border-bottom: 2px solid #D83131;
+    border-top: 2px solid #D83131;
+    padding:5px 0px;
+    width:110px;
+    font-size:18px;
+    text-align:center;
+}
+.i_bock5_title_en{
+    width:110px;
+    text-align:center;
+    font-size:0.5em;
+    margin-bottom:20px;
+}
+.i_bock5_newtitle_1{
+    margin-bottom:5px;
+}
+.i_bock5_newtitle_1 .i_bock5_newtxt{
+        display:inline-block;
+        padding:5px;
+        background-color:#D2B364;
+        color:#ffffff;
+    }
+.i_bock5_newtitle_1 .i_bock5_newdate{
+    font-size:16px;
+    display:inline-block;
+    font-weight:600;
+    padding-left:10px;
+    }
+.i_bock5_newlist1 .i_bock5_newlist_title{
+    margin-bottom:8px;
+}
+.i_bock5_newlist1 ._i_bock5_newlist_content {
+    color: #979797;
+    margin-bottom:10px;
+}
+
+.i_bock5_newimg img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+.i_bock5_newimg{
+    margin-bottom:10px;
+}
+.newtxt {
+    text-align: center;
+}
+.i_bock5_newlist2{
+    margin-bottom:20px;
+}
+.i_bock5_newlist2 .txt {
+    display: inline-block;
+    color: #fff;
+    background-color: #D2B364;
+    font-size: 1em;
+    padding: 2px;
+    margin: 0 auto;
+}
+.i_bock5_content{
+    background-color:#fff;
+}
+.newtxt {
+    margin-bottom: 10px;
+}
+.i_bock5_newday .newday{
+    display:block;
+    font-weight:700;
+    text-align:center;
+}
+    .i_bock5_newday .newyear{
+        display:block;
+        text-align:center;
+    }
+.i_bock5_newlist2 .i_bock5_newlist_title{
+    margin-bottom:15px;
+}
+.i_bock5_newlist2 .i_bock5_newlist_content{
+    color:#979797;
+}
+.i_bock5_newlist_content {
+    border-bottom: 2px solid #DDDADC;
+    padding-bottom:15px;
+}
 
 
-
-    @media (min-width: 768px) {
-        .navbar-default .navbar-nav > .active {
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav > .active {
         border-bottom: 3px solid #CEAF62;
         padding-bottom: 2px;
     }
@@ -298,11 +416,6 @@ body .navbar-default {
     .i_bock2_left {
         text-align: right;
     }
-        .i_bock4_img img {
-            width: 9%;
-            height: auto;
-            margin-right: 13px;
-        }
 }
 
 @media (max-width: 768px) {
@@ -313,11 +426,6 @@ body .navbar-default {
     .i_item img {
         width: 50px;
         height: 50px;
-    }
-    .i_bock4_img img {
-        width: 14%;
-        height: auto;
-        margin-right: 13px;
     }
 }
 
