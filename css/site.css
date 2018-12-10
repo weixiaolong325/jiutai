@@ -870,11 +870,11 @@ body .navbar-default {
     margin-bottom: 10px;
 }
 
-.r_bock1 .r_btn_active {
+ .r_btn_active {
     background-color: #D2B364;
 }
 
-    .r_bock1 .r_btn_active .r_bock1_btn_txt {
+ .r_btn_active .r_bock1_btn_txt {
         border-left: 2px solid #fff;
         color: #fff;
     }
@@ -909,7 +909,7 @@ body .navbar-default {
         margin-bottom: 15px;
     }
 
-    .r_bock1_btn {
+    .r_bock1_content .r_bock1_btn {
         padding: 3px 5px;
     }
 }
@@ -945,3 +945,50 @@ body .navbar-default {
 }
 
 /*-------------人才招聘----------*/
+/*------新闻中心-----------*/
+.n_content{
+    padding-left:10px;
+    padding-right:10px;
+}
+.n_block1 {
+    background-color: #F5F8FA;
+    padding-top:30px;
+}
+
+.n_tipimg {
+        width: 25px;
+        height: 25px;
+    }
+.n_tipchar{
+    color:#D2B364;
+}
+.n_container{
+    margin-top:20px;
+}
+    .n_container  .r_bock1_btn{
+        margin:10px;
+        max-width:122px;
+    }
+    .n_container .r_bock1_btn {
+        height: 40px;
+        padding: 3px 22px;
+    }
+    .n_container .r_bock1_btn_txt{
+        line-height:30px;
+    }
+.n_item1 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.n_datetop{
+    color:#D2B364;
+}
+.n_title{
+    margin-top:10px;
+}
+.n_txt{
+    margin-top:10px;
+}
+
+/*------新闻中心-----------*/
