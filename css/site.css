@@ -335,6 +335,7 @@ body .navbar-default {
     margin-bottom: 1em;
 }
 
+
 .i_bock3 {
     background-color: #EDF3F6;
     padding-top: 50px;
@@ -398,6 +399,9 @@ body .navbar-default {
     margin: 10px auto 0 auto;
     font-size: 1.6em;
 }
+.i_bock3_imgtxts{
+    position:relative;
+}
 
 .i_bock3_item_float {
     height: 200px;
@@ -406,6 +410,16 @@ body .navbar-default {
     position: absolute;
     bottom: 0px;
     z-index: 10;
+    display: none;
+}
+.i_bock3_over {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    background-color: #332D1D;
+    top: 0;
+    opacity: 0.9;
     display: none;
 }
 
@@ -633,6 +647,15 @@ body .navbar-default {
         height: 40px;
         bottom: 100px;
         right: 30px;
+    }
+    .j_content .i_itempadd {
+        padding-left: 10px;
+    }
+    .i_item {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -900,6 +923,7 @@ body .navbar-default {
     .r_bock1_txt2 {
         font-size: 0.7em;
         margin-top: 5px;
+        padding-left:5px;
     }
 
     .r_bock1_img {
@@ -990,6 +1014,7 @@ body .navbar-default {
     display: block;
     max-width: 100%;
     height: auto;
+    min-height:167px;
 }
 
 .n_datetop {

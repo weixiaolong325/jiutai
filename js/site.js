@@ -3,9 +3,12 @@
 
     $(".i_bock3_item").mouseenter(function () {
         $(this).find(".i_bock3_item_float").css("display", "block");
+        $(this).find(".i_bock3_over").css("display", "block");
+        
     })
     $(".i_bock3_item").mouseleave(function () {
         $(this).find(".i_bock3_item_float").css("display", "none");
+        $(this).find(".i_bock3_over").css("display", "none");
     })
     $("body").on('click', '.scroll_top', function () {
         $('html,body').animate({ scrollTop: '0px' }, 800);
