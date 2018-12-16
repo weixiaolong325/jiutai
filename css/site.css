@@ -990,5 +990,165 @@ body .navbar-default {
 .n_txt{
     margin-top:10px;
 }
+.n_block1 .n_day {
+    font-weight: 700;
+    color: #9A9A9A;
+    text-align:center;
+}
+.n_block1 .n_year{
+    text-align:center;
+}
+.n_newlist{
+    margin-top:20px;
+}
+.n_newlisttxt{
+    margin-top:10px;
+}
+.n_newlistcontent{
+    border-bottom:1px solid #A5A4A5;
+    padding-bottom:20px;
+}
+.n_block1 .pagetainer{
+    background-color:#fff;
+    width:400px;
+    max-width:100%;
+}
+.pagetainer ul{
+    list-style:none;
+    padding:10px 7px;
+}
+.n_plink {
+    float: left;
+}
+.n_plink a{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right:10px;
+}
+.pagetainer ul li{
+    display:block;
+}
+.n_activelink {
+    background-color: #D2B364;
+    color: #fff;
+}
+.n_newinfo{
+    padding-bottom:15px;
+}
+.n_pcount {
+    float: left;
+}
+.n_newlink:hover{
+    color:#333;
+    text-decoration:none;
+}
+.n_newlink {
+    color: #333;
+}
+.ni_soure_left{
+    float:left;
+}
+.ni_soure_right{
+    float:right;
+}
+.n_source_content {
+    border-bottom: 1px solid #A7A7A8;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    color: #A7A7A8;
+}
+.n_info_img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.n_info_img{
+    padding-top:10px;
+}
+.ni_title{
+    text-align:center;
+}
+.n_info_content{
+    padding-top:15px;
+}
+    .n_info_content p {
+        text-indent: 2em;
+        margin:0;
+        padding:0;
+        line-height:2em;
+    }
+
 
 /*------新闻中心-----------*/
+/*------关于我们---------*/
+.a_rightcontent{
+    padding-top:10px;
+}
+.a_img1 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.right_line {
+    width: 100px;
+    height: 2px;
+    background-color: #D2B364;
+}
+.a_jianjie p {
+    text-indent: 2em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+.a_jianjie2 p{
+    margin:0;
+    padding:0;
+    line-height:1.5em;
+}
+.a_jianjie2{
+    margin-top:25px;
+}
+.a_tip{
+    color:#D2B364;
+}
+.a_block1 {
+    background-color: #F5F8FA;
+    padding-top: 30px;
+    padding-bottom:20px;
+}
+.a_jj2{
+    margin-top:20px;
+}
+.a_jj2title {
+    color: #D2B364;
+    font-weight: 700;
+}
+.a_jj3 {
+    background-color:#fff;
+    padding-bottom:15px;
+    padding-top:5px;
+
+}
+.a_jj3_img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.a_jj3_title{
+    font-weight:700;
+}
+.a_jj4_img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.a_jj4_img{
+    margin-bottom:20px;
+}
+.a_linkme_txt{
+    margin-top:15px;
+}
+.a_linkme_txt p{
+    font-weight:700;
+}
