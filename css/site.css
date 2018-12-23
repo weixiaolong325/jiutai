@@ -25,6 +25,11 @@ body {
     .scroll_top:hover {
         cursor: pointer;
     }
+.navbar-default .navbar-nav > li > a:hover {
+    font-weight: 700;
+    color: #CEAF62;
+}
+ 
 /*--------------bottom----------------*/
 .j_bottom {
     background-color: #201E20;
@@ -266,10 +271,11 @@ body .navbar-default {
     margin-left: auto;
     margin-right: auto;
     margin-top: -25px;
-    background: #ffffff;
+    background: #F5F8FA;
     padding: 15px;
     position: relative;
     border-bottom: 1px solid #EDF3F6;
+    border: 1px solid #ddd;
 }
 
 .navbar {
@@ -437,6 +443,16 @@ body .navbar-default {
     .i_bock3_info a {
         color: #ffffff;
     }
+.i_bock3_minimg{
+    margin-top:15px;
+    margin-left:auto;
+    margin-right:auto;
+    width:60px;
+    height:60px;
+    background-color:#fff;
+    border-radius:30px;
+    overflow:hidden;
+}
 
 .i_bock4 {
     margin-top: 25px;
@@ -601,7 +617,7 @@ body .navbar-default {
 @media (min-width: 768px) {
     .navbar-default .navbar-nav > .active {
         border-bottom: 3px solid #CEAF62;
-        padding-bottom: 2px;
+        /*padding-bottom: 2px;*/
     }
 
     .navbar-nav {
