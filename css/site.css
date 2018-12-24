@@ -476,6 +476,7 @@ body .navbar-default {
     display: block;
     max-width: 100%;
     height: auto;
+    margin:auto;
 }
 
 .i_bock4_item {
@@ -503,13 +504,13 @@ body .navbar-default {
     border-bottom: 2px solid #D83131;
     border-top: 2px solid #D83131;
     padding: 5px 0px;
-    width: 110px;
+    width: 121px;
     font-size: 18px;
     text-align: center;
 }
 
 .i_bock5_title_en {
-    width: 110px;
+    width: 121px;
     text-align: center;
     font-size: 0.5em;
     margin-bottom: 20px;
