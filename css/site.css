@@ -481,6 +481,7 @@ body .navbar-default {
 .i_bock4_item {
     padding-left: 5px;
     padding-right: 5px;
+    margin-bottom:10px;
 }
 
 .i_bock4_btn {
@@ -642,6 +643,13 @@ body .navbar-default {
         bottom: 180px;
         right: 100px;
     }
+    .col-sm-20{
+        width:20%;
+        float:left;
+    }
+    .i_bock4_app {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -672,6 +680,9 @@ body .navbar-default {
         margin-right: 0;
         padding-left: 0;
         padding-right: 0;
+    }
+    .i_bock4_web{
+        display:none;
     }
 }
 
