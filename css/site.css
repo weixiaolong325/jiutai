@@ -694,6 +694,9 @@ body .navbar-default {
     .i_bock4_web {
         display: none;
     }
+    .scroll_top{
+        display:none;
+    }
 }
 
 /*----------------index--------*/
