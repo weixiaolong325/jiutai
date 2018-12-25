@@ -22,6 +22,8 @@
         $(".r_job_info").css('display', 'none');
 
         $(".r_job_info").eq(index).css('display', 'block');
+        
+
     })
 
     /*新闻中心*/
@@ -33,6 +35,10 @@
         $(".n_newinfo").css('display', 'none');
 
         $(".n_newinfo").eq(index).css('display', 'block');
+        //当前文案
+        //debugger;
+        var tip2 = $(this).find(".r_bock1_btn_txt").text();
+        $(".n_tip2").html(tip2);
     })
 
     /*关于我们*/

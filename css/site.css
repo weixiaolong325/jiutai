@@ -25,11 +25,12 @@ body {
     .scroll_top:hover {
         cursor: pointer;
     }
+
 .navbar-default .navbar-nav > li > a:hover {
     font-weight: 700;
     color: #CEAF62;
 }
- 
+
 /*--------------bottom----------------*/
 .j_bottom {
     background-color: #201E20;
@@ -405,8 +406,9 @@ body .navbar-default {
     margin: 10px auto 0 auto;
     font-size: 1.6em;
 }
-.i_bock3_imgtxts{
-    position:relative;
+
+.i_bock3_imgtxts {
+    position: relative;
 }
 
 .i_bock3_item_float {
@@ -418,6 +420,7 @@ body .navbar-default {
     z-index: 10;
     display: none;
 }
+
 .i_bock3_over {
     height: 100%;
     width: 100%;
@@ -443,15 +446,16 @@ body .navbar-default {
     .i_bock3_info a {
         color: #ffffff;
     }
-.i_bock3_minimg{
-    margin-top:15px;
-    margin-left:auto;
-    margin-right:auto;
-    width:60px;
-    height:60px;
-    background-color:#fff;
-    border-radius:30px;
-    overflow:hidden;
+
+.i_bock3_minimg {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .i_bock4 {
@@ -476,13 +480,13 @@ body .navbar-default {
     display: block;
     max-width: 100%;
     height: auto;
-    margin:auto;
+    margin: auto;
 }
 
 .i_bock4_item {
     padding-left: 5px;
     padding-right: 5px;
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .i_bock4_btn {
@@ -644,10 +648,12 @@ body .navbar-default {
         bottom: 180px;
         right: 100px;
     }
-    .col-sm-20{
-        width:20%;
-        float:left;
+
+    .col-sm-20 {
+        width: 20%;
+        float: left;
     }
+
     .i_bock4_app {
         display: none;
     }
@@ -673,17 +679,20 @@ body .navbar-default {
         bottom: 100px;
         right: 30px;
     }
+
     .j_content .i_itempadd {
         padding-left: 10px;
     }
+
     .i_item {
         margin-left: 0;
         margin-right: 0;
         padding-left: 0;
         padding-right: 0;
     }
-    .i_bock4_web{
-        display:none;
+
+    .i_bock4_web {
+        display: none;
     }
 }
 
@@ -951,7 +960,7 @@ body .navbar-default {
     .r_bock1_txt2 {
         font-size: 0.7em;
         margin-top: 5px;
-        padding-left:5px;
+        padding-left: 5px;
     }
 
     .r_bock1_img {
@@ -1042,7 +1051,7 @@ body .navbar-default {
     display: block;
     max-width: 100%;
     height: auto;
-    min-height:167px;
+    min-height: 167px;
 }
 
 .n_datetop {
@@ -1260,7 +1269,7 @@ body .navbar-default {
 .v_bolck1 {
     background-color: #1B395B;
     padding-top: 25px;
-    padding-bottom:25px;
+    padding-bottom: 25px;
 }
 
 .v_content {
@@ -1294,11 +1303,13 @@ body .navbar-default {
 .v_container {
     margin-top: 10px;
 }
+
 .v_img img {
     display: block;
     max-width: 100%;
     height: auto;
 }
-.v_img{
-    padding-top:10px;
+
+.v_img {
+    padding-top: 10px;
 }
