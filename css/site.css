@@ -657,6 +657,12 @@ body .navbar-default {
     .i_bock4_app {
         display: none;
     }
+    .hz_merchant{
+        height:155px;
+    }
+    .i_hz_prenex{
+        line-height:155px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -696,6 +702,13 @@ body .navbar-default {
     }
     .scroll_top{
         display:none;
+    }
+    .hz_merchant {
+        height: 111px;
+    }
+
+    .i_hz_prenex {
+        line-height: 111px;
     }
 }
 
