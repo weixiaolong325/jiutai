@@ -680,6 +680,9 @@ body {
         .i_hz_prenex {
             line-height: 155px;
         }
+        .i_bock2_text{
+            padding-top:15px;
+        }
     }
 
     @media (max-width: 768px) {
