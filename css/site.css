@@ -951,7 +951,7 @@ body {
 
     .r_bock1_btn_txt {
         border-left: 2px solid #D2B364;
-        text-align: right;
+        text-align: center;
         height: 100%;
         color: #D2B364;
     }
@@ -1100,7 +1100,13 @@ body {
         max-width: 100%;
         height: auto;
         min-height: 167px;
+
     }
+.n_item1 {
+    padding-top:15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #A5A4A5;
+}
 
     .n_datetop {
         color: #D2B364;
@@ -1176,8 +1182,9 @@ body {
     }
 
     .n_newlink:hover {
-        color: #333;
+        color: #D2B364;
         text-decoration: none;
+        font-weight:700;
     }
 
     .n_newlink {
