@@ -5,14 +5,14 @@
         $(this).find(".i_bock3_item_float").css("display", "block");
         $(this).find(".i_bock3_over").css("display", "block");
 
-    })
+    });
     $(".i_bock3_item").mouseleave(function () {
         $(this).find(".i_bock3_item_float").css("display", "none");
         $(this).find(".i_bock3_over").css("display", "none");
-    })
+    });
     $("body").on('click', '.scroll_top', function () {
         $('html,body').animate({ scrollTop: '0px' }, 800);
-    })
+    });
     /*人才招聘*/
     $(".r_bock1 .r_bock1_btn").click(function () {
         $(".r_bock1_btn").removeClass('r_btn_active');
@@ -22,9 +22,8 @@
         $(".r_job_info").css('display', 'none');
 
         $(".r_job_info").eq(index).css('display', 'block');
-        
 
-    })
+    });
 
     /*新闻中心*/
     $(".n_block1 .r_bock1_btn").click(function () {
@@ -39,8 +38,7 @@
         //debugger;
         var tip2 = $(this).find(".r_bock1_btn_txt").text();
         $(".n_tip2").html(tip2);
-    })
-
+    });   
     /*关于我们*/
     $(".a_block1 .r_bock1_btn").click(function () {
         $(".r_bock1_btn").removeClass('r_btn_active');
@@ -50,9 +48,9 @@
         $(".a_rightcontent").css('display', 'none');
 
         $(".a_rightcontent").eq(index).css('display', 'block');
-    })
+    });
 
-})
+});
 var webIndex = 1;
 var appIndex = 1;
 var webPageSize = 10;
@@ -61,11 +59,11 @@ var appPageSize = 6;
 var pageCount = 0;
 function iNext() {
     var imgs = $(".i_bock4imglist").find('img');
-    if (pageCount == 0) {
+    if (pageCount === 0) {
         pageCount = imgs.length;
     }
     var appType = $(".i_bock4_web").css('display');
-    if (appType == "block") {
+    if (appType === "block") {
         var currentCount = webIndex * webPageSize;
         if (currentCount >= pageCount) {
             //回到第一页
@@ -98,7 +96,7 @@ function iNext() {
         }
         //下一页
         var nextCount = (appIndex + 1) * appPageSize;
-        var currentIndex = appIndex * appPageSize + 1;
+         currentIndex = appIndex * appPageSize + 1;
         //清掉旧的
         $(".i_bock4_app .i_bock_list").html("");
         for (var i = currentIndex; i <= nextCount; i++) {
@@ -119,15 +117,15 @@ function iNext() {
 //上一页
 function iPre() {
     var imgs = $(".i_bock4imglist").find('img');
-    if (pageCount == 0) {
+    if (pageCount === 0) {
         pageCount = imgs.length;
     }
 
     var appType = $(".i_bock4_web").css('display');
-    if (appType == "block") {
+    if (appType === "block") {
         //向上取整
         var maxPage = Math.ceil(pageCount / webPageSize);
-        if (webIndex == 1) {
+        if (webIndex === 1) {
             //回到第一页
             webIndex = maxPage;
         }
@@ -181,3 +179,22 @@ function iPre() {
         }
     }
 }
+/*产品简介*/
+//立即申请
+function openChat() {
+    //打开百度商桥
+    $("#nb_icon_wrap").click();
+}
+
+
+$(document).scroll(function () {
+    var scroH = $(document).scrollTop();  //滚动高度
+
+    if (scroH > 200) {  //距离顶部大于100px时
+        $(".scroll_top").css("display","block");
+    }
+    else {
+        $(".scroll_top").css("display","none");
+    }
+});
+
