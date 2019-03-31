@@ -712,6 +712,7 @@ body .navbar-default {
         bottom: 100px;
         right: 30px;
     }
+    
 
     .j_content .i_itempadd {
         padding-left: 10px;
@@ -832,6 +833,9 @@ body .navbar-default {
     color: #fff;
     border-radius: 15px;
 }
+    .p_bock_btn:hover {
+        cursor: pointer;
+    }
 
 .p_bock_itemright {
     background-color: #fff;
